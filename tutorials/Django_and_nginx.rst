@@ -236,11 +236,11 @@ Now create a file called mysite_nginx.conf in the /etc/nginx/sites-available/ di
         client_max_body_size 75M;   # adjust to taste
 
         # Django media
-        location /media  {
+        location /media/  {
             alias /path/to/your/mysite/media;  # your Django project's media files - amend as required
         }
    
-        location /static {
+        location /static/ {
             alias /path/to/your/mysite/static; # your Django project's static files - amend as required
         }
    
